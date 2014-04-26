@@ -83,5 +83,6 @@ if (!empty($_REQUEST['text1']))
 }
 ?>
 
+&copy; <strong>sphinxid</strong> - kodelatte.com
 </body>
 </html>
