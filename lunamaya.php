@@ -121,9 +121,19 @@ function getRandomIndoSyn($word, $random = -1, $debug = false)
 
   //$word = $data[$word][$pwg][mt_rand(0, count($data[$word][$pwg])-1)];
   if ($random == -1)
-    $pwg = mt_rand(0, (count($data[$word])-1));
+  {
+    $max = (count($data[$word])-1);
+    if ($max < 0)
+      $max = 0;
 
-  $word = $data[$word][$pwg][mt_rand(0, count($data[$word][$pwg])-1)];
+    $pwg = mt_rand(0, $max);
+  }
+
+  $max2 = count($data[$word][$pwg])-1;
+  if ($max2 < 0)
+    $max2 = 0;
+
+  $word = $data[$word][$pwg][mt_rand(0, $max2)];
 
   $data[0] = $word;
   $data[1] = $pwg;
