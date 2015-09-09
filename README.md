@@ -8,4 +8,4 @@ GPL Licensed.
 DEMO: http://goo.gl/PhwkQD
 
 
-&copy; 2014 sphinxid <firman@kodelatte.com>
+&copy; 2014 Firman Gautama <firman@kodelatte.com>
